@@ -22,7 +22,6 @@ public class Vehicle {
         this.model = model;
     }
 
-
     public Vehicle(String make, String model, int year, String engine_type, float engineCapacity) {
         this.make = make;
         this.model = model;
@@ -82,6 +81,14 @@ public class Vehicle {
         return false;
     }
 
+    public void start() {
+//        TODO: Add code that starts the vehicle
+//        Step 1: Press the brake for automatic transmision or the clutch for manual
+//        Step 2: Rotate the key to position 2
+//        Step 3: Wait 2 seconds
+//        Step 4: Rotate the key to position 3
+    }
+
     public static class Builder {
         private String make;
         private String model;
@@ -123,11 +130,18 @@ public class Vehicle {
     }
 
     public static void main(String[] args) {
-        new Vehicle("Tesla", "CyberTruck", 2020, "Electric", 1400);
+        Vehicle v1 = new Vehicle("Tesla", "CyberTruck", 2020, "Electric", 1400);
 
-        new Vehicle.Builder("Tesla", "CuberTruck")
+        Vehicle v2 = new Vehicle.Builder("Tesla", "CuberTruck")
                 .withFabricationYear(2020)
                 .withEngineType("Electric")
-                .withEngineCapacity(1400);
+                .withEngineCapacity(1400).build();
+
+        //    SOLID: Liskov substitution principle
+        if(v1 instanceof Car)
+            v1.start();
+        else if (v1 instanceof Motorcycle)
+            ((Motorcycle) v1).startMotorcycle();
+
     }
 }

@@ -8,8 +8,7 @@ public class Van extends Vehicle {
         this.numberOfSeats = numberOfSeats;
     }
 
-    //    SOLID: Liskov substitution principle
-    //    SOLID: Interface segregation principle
+    //    SOLID: Interface segregation principle: Create a new interface for PersonCarrier
     public int getNumberOfSeats() {
         return numberOfSeats;
     }

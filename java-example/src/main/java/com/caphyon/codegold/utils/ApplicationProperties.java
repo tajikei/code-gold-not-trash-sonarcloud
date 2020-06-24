@@ -1,9 +1,7 @@
-package com.caphyon.codegold.structures;
+package com.caphyon.codegold.utils;
 
 import java.io.InputStream;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class ApplicationProperties {
     private Properties mProperties;

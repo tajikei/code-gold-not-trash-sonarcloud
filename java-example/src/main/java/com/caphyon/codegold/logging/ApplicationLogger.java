@@ -1,9 +1,5 @@
 package com.caphyon.codegold.logging;
 
-import com.caphyon.codegold.database.DBConnection;
-import com.caphyon.codegold.structures.ApplicationProperties;
-import com.caphyon.codegold.structures.ApplicationPropertiesSingleton;
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

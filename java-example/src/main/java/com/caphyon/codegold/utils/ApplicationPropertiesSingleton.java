@@ -1,13 +1,10 @@
-package com.caphyon.codegold.structures;
+package com.caphyon.codegold.utils;
 
 import com.caphyon.codegold.database.DBConnection;
 import com.caphyon.codegold.logging.ApplicationLogger;
-import com.caphyon.codegold.utils.Constants;
 
 import java.io.InputStream;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class ApplicationPropertiesSingleton {
     private static ApplicationPropertiesSingleton mInstance;

@@ -8,7 +8,6 @@ public class Bus extends Vehicle {
         this.numberOfSeats = numberOfSeats;
     }
 
-    //    SOLID: Liskov substitution principle
     //    SOLID: Interface segregation principle
     public int getNumberOfSeats() {
         return numberOfSeats;
