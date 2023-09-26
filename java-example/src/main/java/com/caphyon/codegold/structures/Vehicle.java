@@ -3,16 +3,9 @@ package com.caphyon.codegold.structures;
 public class Vehicle {
     private String make;
     private String model;
+    private int f_year; 
 
-//    Example of bad practices
-    private int yearwhenthecarwasmade;
-    private int fyear;
-    private int f_year; // Year when the car was made
-    private int f_y;
-
-//    Example of good practices
     private int fabricationYear;
-    private int year;
 
     private String engine_type;
     private float engineCapacity;
